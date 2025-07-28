@@ -1,12 +1,12 @@
 # S3 Module
 module "s3" {
-  source      = "../modules/s3"
+  source      = "./modules/s3"
   bucket_name = var.bucket_name
 }
 
 # AWS EFS Module
 module "efs" {
-  source            = "../modules/efs"
+  source            = "./modules/efs"
   efs_name          = "my-app-efs"
   private_subnet_ids = module.vpc.private_subnet_ids
   allowed_cidr_blocks = [module.vpc.vpc_cidr]
@@ -17,7 +17,7 @@ module "efs" {
 
 # VPC module
 module "vpc" {
-  source               = "../modules/vpc"
+  source               = "./modules/vpc"
   vpc_cidr             = var.vpc_cidr
   vpc_name             = var.vpc_name
   public_subnet_cidrs  = var.public_subnet_cidrs
@@ -27,7 +27,7 @@ module "vpc" {
 
 # RDS PostgreSQL Module
 module "rds" {
-  source           = "../modules/rds-postgres"
+  source           = "./modules/rds-postgres"
   db_name          = var.db_name
   db_user          = var.db_user
   db_password      = var.db_password
@@ -39,27 +39,27 @@ module "rds" {
 
 # DocumentDB Module
 module "documentdb" {
-  source           = "../modules/documentdb"
+  source           = "./modules/documentdb"
   master_username  = var.docdb_master_username
   master_password  = var.docdb_master_password
 }
 
 # AWS Connect Module
 #module "connect" {
-#  source = "../modules/aws-connect"
+#  source = "./modules/aws-connect"
 #  alias  = var.connect_alias
 #}
 
 # SSM Module
 module "ssm" {
-  source    = "../modules/ssm"
+  source    = "./modules/ssm"
   role_name = "ssm-ec2-role"
 }
 
 
 # EC2 Private Module
 module "ec2_private" {
-  source    = "../modules/ec2-private"
+  source            = "./modules/ec2-private"
   ami_id            = var.ami_id
   instance_type     = var.instance_type
   private_subnet_id = module.vpc.private_subnet_ids[0] # use first private subnet
