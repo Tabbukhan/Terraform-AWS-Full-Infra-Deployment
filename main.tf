@@ -53,7 +53,7 @@ module "documentdb" {
 # SSM Module
 module "ssm" {
   source    = "./modules/ssm"
-  role_name = "ssm-ec2-role"
+  role_name = "ssm-ec2-role-north"
 }
 
 
