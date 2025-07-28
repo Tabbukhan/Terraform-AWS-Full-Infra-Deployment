@@ -1,7 +1,7 @@
-provider "aws" {
-   region = "ap-south-1"
-   alias  = "ap_south_1"
-}
+# provider "aws" {
+#   region = "ap-south-1"
+#   alias  = "ap_south_1"
+#}
 
 # S3 Module
 module "s3" {
