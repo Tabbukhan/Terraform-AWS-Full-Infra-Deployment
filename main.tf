@@ -1,6 +1,6 @@
 provider "aws" {
-    region = us-east-1
-    alias = us_east_1
+    region = ap-south-1
+    alias = ap_south_1
 }
 
 # S3 Module
