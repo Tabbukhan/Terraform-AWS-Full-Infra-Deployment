@@ -1,3 +1,16 @@
+# Required Proviers 
+terraform {
+  required_version = ">= 1.3.0"
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
+
 # S3 Module
 module "s3" {
   source      = "./modules/s3"
