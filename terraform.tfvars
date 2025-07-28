@@ -1,5 +1,5 @@
 # S3 Variables
-bucket_name          = "my-terraform-s3-bucket-north"
+bucket_name          = "my-terraform-s3-bucket"
 
 # EC2 Variables
 instance_name       = "private-ec2"
