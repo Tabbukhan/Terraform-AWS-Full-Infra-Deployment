@@ -3,9 +3,9 @@ provider "aws" {
 }
 
 # EC2 (Private)
-variable "instance_name" {}
-variable "ami_id" {}
-variable "instance_type" {}
+variable "instance_name" { type = string}
+variable "ami_id" { type = string}
+variable "instance_type" {type = string}
 variable "my_ip" {}
 variable "key_name" {}
 
@@ -32,5 +32,3 @@ variable "vpc_name" {}
 variable "public_subnet_cidrs" {}
 variable "private_subnet_cidrs" {}
 variable "availability_zones" {}
-
-
