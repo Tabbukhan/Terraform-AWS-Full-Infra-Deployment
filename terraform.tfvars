@@ -13,7 +13,7 @@ db_name              = "mydb"
 db_user              = "tashue"
 db_password          = "StrongPass123!"
 #db_sg                = "sg-db123456"
-db_subnet_group_name = "my-db-subnet-group"
+db_subnet_group_name = "my-db-subnet-groupp"
 
 # DocumentDB variables
 docdb_master_username = "docdbadmin"
