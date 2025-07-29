@@ -12,7 +12,7 @@ module "s3" {
 # AWS EFS Module
 module "efs" {
   source            = "./modules/efs"
-  efs_name          = "my-app-efs"
+  efs_name          = "my-app-efs-demo"
   private_subnet_ids = module.vpc.private_subnet_ids
   allowed_cidr_blocks = [module.vpc.vpc_cidr]
   vpc_id            = module.vpc.vpc_id
@@ -58,7 +58,7 @@ module "documentdb" {
 # SSM Module
 module "ssm" {
   source    = "./modules/ssm"
-  role_name = "ssm-ec2-role-ssm"
+  role_name = "ssm-ec2-role-demo"
 }
 
 
