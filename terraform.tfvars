@@ -1,19 +1,19 @@
 # S3 Variables
-bucket_name          = "my-terraform-s3-buckett"
+bucket_name          = "myy-terraform-s3-buckett"
 
 # EC2 Variables
-instance_name       = "myy-private-ec2"
+instance_name       = "myyy-private-ec2"
 ami_id              = "ami-0f918f7e67a3323f0"
 instance_type       = "t3.micro"
 my_ip               = "0.0.0.0/0"  # "13.234.231.39/32"
 key_name            = "private-instance-key"
 
 # RDS Variables
-db_name              = "mydb"
+db_name              = "mydbdb-demo"
 db_user              = "tashue"
 db_password          = "StrongPass123!"
 #db_sg                = "sg-db123456"
-db_subnet_group_name = "my-db-subnet-groupp"
+db_subnet_group_name = "my-db-subnet-group-demo"
 
 # DocumentDB variables
 docdb_master_username = "docdbadmin"
