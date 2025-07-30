@@ -7,7 +7,7 @@
  # backend "s3" {
    # bucket         = "my-terraform-backend-bucket"
    # key            = "env:/terraform.tfstate"
-   # region         = "us-east-1"
+   # region         = "ap-south-1"
     #dynamodb_table = "terraform-locks"
     #encrypt        = true
   #}
@@ -23,7 +23,7 @@ module "s3" {
 # AWS EFS Module
 module "efs" {
   source            = "./modules/efs"
-  efs_name          = "my-app-efs-demo"
+  efs_name          = "terra-app-efs-demo"
   private_subnet_ids = module.vpc.private_subnet_ids
   allowed_cidr_blocks = [module.vpc.vpc_cidr]
   vpc_id            = module.vpc.vpc_id
