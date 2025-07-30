@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "my-terraform-backend-bucket"
+  bucket = "my-terra-backend-bucket"
   force_destroy = true
   versioning {
     enabled = true
