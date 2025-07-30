@@ -3,15 +3,15 @@
 #   alias  = "ap_south_1"
 #}
 
-terraform {
-  backend "s3" {
-    bucket         = "my-terraform-backend-bucket"
-    key            = "env:/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "terraform-locks"
-    encrypt        = true
-  }
-}
+#terraform {
+ # backend "s3" {
+   # bucket         = "my-terraform-backend-bucket"
+   # key            = "env:/terraform.tfstate"
+   # region         = "us-east-1"
+    #dynamodb_table = "terraform-locks"
+    #encrypt        = true
+  #}
+#}
 
 
 # S3 Module
