@@ -1,8 +1,8 @@
 # S3 Variables
-bucket_name          = "my-terraform-s3-buckett"
+bucket_name          = "my-terraform-s3-bucket-ap"
 
 # EC2 Variables
-instance_name       = "my-private-ec2"
+instance_name       = "my-private-ec2-terra"
 ami_id              = "ami-0f918f7e67a3323f0"
 instance_type       = "t3.micro"
 my_ip               = "0.0.0.0/0"  # "13.234.231.39/32"
@@ -13,7 +13,7 @@ db_name              = "mydbdb-demo"
 db_user              = "tashue"
 db_password          = "StrongPass123!"
 #db_sg                = "sg-db123456"
-db_subnet_group_name = "my-db-subnet-group-demo"
+db_subnet_group_name = "db-subnet-group-demo"
 
 # DocumentDB variables
 docdb_master_username = "docdbadmin"
@@ -24,7 +24,7 @@ docdb_master_password = "DocdbPass123!"
 
 # VPC Variables
 vpc_cidr             = "10.0.0.0/16"
-vpc_name             = "demo-vpc-demm"
+vpc_name             = "demo-vpc-terra"
 public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24"]
 private_subnet_cidrs = ["10.0.11.0/24", "10.0.12.0/24"]
 availability_zones   = ["ap-south-1a", "ap-south-1b"]
